@@ -98,5 +98,10 @@ namespace MocanMelisaMariaLab7.Data
                 return _database.InsertAsync(shop);
             }
         }
+        public Task<int> DeleteShopAsync(Shop shop)
+        {
+            return _database.DeleteAsync(shop);
+        }
+
     }
 }
